@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "mobile_app_tp",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://urt2509.github.io/mobile_app_tp",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /mobile_app_tp/"
   },
   "repository": {
     "type": "git",
