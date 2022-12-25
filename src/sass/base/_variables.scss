@@ -1,6 +1,13 @@
-$background-color: #FFFFFF;
-$color-text:#000000;
-$background-hero:#06071B;
-$header-gradient: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
-$buttons-gradient:linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-$white-color:#FFFFFF;
+$background-color: #ffffff;
+$color-text: #000000;
+$background-hero: #06071b;
+$header-gradient: linear-gradient(
+  90.03deg,
+  rgba(0, 197, 235, 0.3) -1.97%,
+  rgba(181, 68, 254, 0.3) 89.43%
+);
+$buttons-gradient: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+$white-color: #ffffff;
+$color-text-white: #ffffff;
+$color-text-black: #000000;
+$transition-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);

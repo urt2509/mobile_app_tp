@@ -1,22 +1,40 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-body {font-family: 'Inter', sans-serif;
-background-color: $background-color;
-color: $color-text;
-font-weight: 500;
-font-size: 16px;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $background-color;
+  color: $color-text;
+  font-weight: 500;
+  font-size: 16px;
 }
-.list{
-    list-style: none;
+
+.list {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
-image{
-    display: block;
-    width: 100%;
+
+a {
+  text-decoration: none;
 }
-.container{
-    width: 1280px;
-    padding: 0 15px;
-    margin: 0 auto;
+
+image {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
