@@ -205,10 +205,13 @@ image {
   display: inline-block;
   cursor: pointer;
 }
+.video-section__link:not(:last-child) {
+  margin-right: 20px;
+}
 .video-section__icon {
   background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
   border-radius: 50%;
-  fill: red;
+  fill: #ffffff;
 }
 .video-section__image {
   position: relative;

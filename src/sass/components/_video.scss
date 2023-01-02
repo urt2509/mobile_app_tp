@@ -47,14 +47,16 @@
     &__link {
         display: inline-block;
         cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
     }
     
     &__icon {
         background: $buttons-gradient;
         border-radius: 50%;
-        // width: 60px;
-        // height: 60px;
-        fill: red;
+        fill: $white-color;
     }
 
     &__image {
