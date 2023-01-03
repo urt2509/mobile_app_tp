@@ -6,8 +6,7 @@
         display: flex;
         justify-content:space-between;
         color: $white-color;
-        padding: 60px 120px 80px 0;
-        outline: 1px dotted orange;   // will del
+        padding: 60px 120px 60px 0;
 
         &::before {
             position: absolute;
@@ -59,16 +58,18 @@
         fill: $white-color;
     }
 
-    &__image {
+    &__image-box {
         position: relative;
+    }
 
+    &__gradient {
         &::before {
             position: absolute;
             content: '';
             width: 194px;
             height: 327px;
-            top: 50%;
-            left: 50%;
+            top: -20%;
+            left: 15%;
         
             background: rgba(0, 197, 235, 0.5);
             filter: blur(51.5px);
@@ -80,12 +81,17 @@
             content: '';
             width: 255px;
             height: 333px;
-            top: 0;
-            left: 0;
+            top: -10%;
+            left: 40%;
         
             background: rgba(125, 85, 255, 0.5);
             filter: blur(51.5px);
             transform: matrix(-0.08, -1, 0.99, -0.1, 0, 0);
         }
+    }
+
+    &__image {
+        position: relative;
+        z-index: 1;
     }
 }

@@ -168,8 +168,7 @@ image {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
-  padding: 60px 120px 80px 0;
-  outline: 1px dotted orange;
+  padding: 60px 120px 60px 0;
 }
 .video-section__box::before {
   position: absolute;
@@ -213,28 +212,32 @@ image {
   border-radius: 50%;
   fill: #ffffff;
 }
-.video-section__image {
+.video-section__image-box {
   position: relative;
 }
-.video-section__image::before {
+.video-section__gradient::before {
   position: absolute;
   content: "";
   width: 194px;
   height: 327px;
-  top: 50%;
-  left: 50%;
+  top: -20%;
+  left: 15%;
   background: rgba(0, 197, 235, 0.5);
   filter: blur(51.5px);
   transform: matrix(0.04, -1, -1, -0.02, 0, 0);
 }
-.video-section__image::after {
+.video-section__gradient::after {
   position: absolute;
   content: "";
   width: 255px;
   height: 333px;
-  top: 0;
-  left: 0;
+  top: -10%;
+  left: 40%;
   background: rgba(125, 85, 255, 0.5);
   filter: blur(51.5px);
   transform: matrix(-0.08, -1, 0.99, -0.1, 0, 0);
+}
+.video-section__image {
+  position: relative;
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */
