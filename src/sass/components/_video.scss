@@ -1,0 +1,97 @@
+.video-section {
+    background-color: #06071B;
+    
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content:space-between;
+        color: $white-color;
+        padding: 60px 120px 60px 0;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 213px;
+            height: 29px;
+            top: 50%;
+            left: 15%;
+            background: linear-gradient(0deg, rgba(0, 197, 235, 0.5), rgba(0, 197, 235, 0.5)), #D9D9D9;
+            filter: blur(51.5px);
+            transform: rotate(128.76deg);
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 130px;
+            height: 29px;
+            top: 30%;
+            left: 30%;
+            background: rgba(125, 85, 255, 0.5);
+            filter: blur(51.5px);
+            transform: rotate(128.76deg);
+        }
+    }
+    
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        max-width: 480px;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        display: inline-block;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    
+    &__icon {
+        background: $buttons-gradient;
+        border-radius: 50%;
+        fill: $white-color;
+    }
+
+    &__image-box {
+        position: relative;
+    }
+
+    &__gradient {
+        &::before {
+            position: absolute;
+            content: '';
+            width: 194px;
+            height: 327px;
+            top: -20%;
+            left: 15%;
+        
+            background: rgba(0, 197, 235, 0.5);
+            filter: blur(51.5px);
+            transform: matrix(0.04, -1, -1, -0.02, 0, 0);
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 255px;
+            height: 333px;
+            top: -10%;
+            left: 40%;
+        
+            background: rgba(125, 85, 255, 0.5);
+            filter: blur(51.5px);
+            transform: matrix(-0.08, -1, 0.99, -0.1, 0, 0);
+        }
+    }
+
+    &__image {
+        position: relative;
+        z-index: 1;
+    }
+}
