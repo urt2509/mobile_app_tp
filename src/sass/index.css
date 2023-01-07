@@ -160,6 +160,103 @@ image {
   background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 }
 
+.section-features {
+  padding-top: 40px;
+  padding-bottom: 105px;
+  position: relative;
+}
+.section-features::after {
+  position: absolute;
+  content: "";
+  width: 304px;
+  height: 203px;
+  top: 85px;
+  right: 12;
+  background: linear-gradient(0deg, rgba(0, 197, 235, 0.2), rgba(181, 68, 254, 0.2));
+  filter: blur(110.5px);
+}
+.section-features::before {
+  position: absolute;
+  content: "";
+  width: 1044px;
+  height: 824px;
+  top: 20px;
+  right: 373px;
+  background: linear-gradient(0deg, rgba(0, 197, 235, 0.25), rgba(61, 153, 241, 0.155), rgba(181, 68, 254, 0.25));
+  filter: blur(109.5px);
+  transform: rotate(59.96deg);
+}
+.section-features__title {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+.section-features__text {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 141px;
+}
+
+.section-features__image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 277px;
+}
+
+.features__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 165px;
+}
+.features__item {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 80px;
+}
+.features__item:nth-child(n+5) {
+  margin-bottom: 0;
+}
+.features__item:nth-child(2n+1) {
+  margin-right: 492px;
+}
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  transform: translateX(-100%);
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/image-features.png);
+}
+.features__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+.features__text {
+  width: 220px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
 .video-section {
   background-color: #06071B;
 }
