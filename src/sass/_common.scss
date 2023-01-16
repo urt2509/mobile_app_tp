@@ -33,9 +33,15 @@ image {
   max-width: 100%;
   height: auto;
 }
-
-.container {
-  width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
+.container{width: 320px;
+  margin: 0 auto;}
+@media  screen and (min-width: 768px){
+  .container{
+  width: 100vw;}
 }
+@media  screen and (min-width: 1280px){
+  .container{ 
+  width: 1280px;
+  padding: 0 15px;}
+}
+
