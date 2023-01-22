@@ -1,7 +1,10 @@
 .hero {
+  position: relative;
+  max-height: 744px;
+  height: 744px;
   color: $color-text-white;
 
-  background-color: $background-hero;
+  background-color: $background-color-white;
   background-position: center;
 }
 
@@ -9,41 +12,50 @@
   position: relative;
 }
 
+.hero__box--bg-color {
+  background-color: $background-hero;
+}
+
 .hero__picture-mobile {
   position: absolute;
-  top: 10px;
+  top: 105px;
   right: 0;
 }
 
 .hero__picture-spraying {
   position: absolute;
-  top: 30px;
+  top: 182px;
   left: 0;
 }
 
 .hero__box {
-  display: flex;
   display: inline-block;
-  flex-direction: column;
-  justify-content: flex-start;
 
-  padding-top: 145px;
+  padding-top: 243px;
   padding-bottom: 146px;
 }
 
 .hero__title {
   margin-bottom: 12px;
 
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .hero__subtitle {
   margin-bottom: 28px;
 
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .hero__item {
@@ -54,7 +66,12 @@
   margin-bottom: 60px;
 
   font-weight: 700;
+  font-size: 12px;
   line-height: 1.19;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .items__link {
