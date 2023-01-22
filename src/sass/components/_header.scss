@@ -1,9 +1,10 @@
 .header {
-  background-color: $background-hero;
-  height: 98px;
-}
-.header-section {
+  position: absolute;
+  z-index: 1;
+  left: 1px;
+  right: 1px;
   display: flex;
+  align-items: center;
   height: 72px;
   background: linear-gradient(
     90.03deg,
@@ -12,13 +13,18 @@
   );
   backdrop-filter: blur(17.5px);
   transform: translateY(26px);
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
+
 .header-nav {
-  display: flex;
-  gap: 40px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    display: flex;
+    gap: 40px;
+  }
 }
+
 .logo {
   font-style: normal;
   font-weight: 400;
@@ -26,6 +32,7 @@
   line-height: 1.21;
   color: $white-color;
 }
+
 .nav-link {
   font-style: normal;
   font-weight: 400;
@@ -33,6 +40,7 @@
   line-height: 1.25;
   color: $white-color;
 }
+
 .header-box {
   display: flex;
   align-items: center;

@@ -1,46 +1,54 @@
 <section class="hero">
-  <div class="container container--relative">
-    <img
-      src="/src/images/hero-mobile.png"
-      alt="Mobile and icons"
-      class="hero__picture-mobile"
-    />
-    <img
-      src="/src/images/hero-spraying.png"
-      alt="Spraying"
-      class="hero__picture-spraying"
-    />
-    <div class="hero__box">
-      <h1 class="hero__title">Introducing Mobileapp</h1>
-      <p class="hero__subtitle">Maecenas vitae tellus sapien. Prasent</p>
+  <div class="hero__box--bg-color">
+    <div class="container container--relative">
+      <img
+        srcset="
+          ./images/hero/mobile/mobile.png    1x,
+          ./images/hero/mobile/mobile@2x.png 2x
+        "
+        src="./images/hero/mobile/mobile.png"
+        alt="Mobile and icons"
+        class="hero__picture-mobile"
+      />
 
-      <ul class="hero__item">
-        <li class="hero__items list">
-          <a href="#" class="items__link">
-            <svg class="items__icon" width="18" height="18">
-              <use href="/src/images/sprite-icons.svg#icon-hero-ul"></use>
-            </svg>
-            semper scelerisque tristique a enim
-          </a>
-        </li>
-        <li class="hero__items list">
-          <a href="#" class="items__link">
-            <svg class="items__icon" width="18" height="18">
-              <use href="/src/images/sprite-icons.svg#icon-hero-ul"></use>
-            </svg>
-            Integer ut mattis nulla, eget vehicula elit
-          </a>
-        </li>
-        <li class="hero__items list">
-          <a href="#" class="items__link">
-            <svg class="items__icon" width="18" height="18">
-              <use href="/src/images/sprite-icons.svg#icon-hero-ul"></use>
-            </svg>
-            Prasent rutrum ac nunc et
-          </a>
-        </li>
-      </ul>
-      <button type="button" class="hero__button">Download</button>
+      <img
+        src="./images/hero-spraying.png"
+        alt="Spraying"
+        class="hero__picture-spraying"
+      />
+
+      <div class="hero__box">
+        <h1 class="hero__title">Introducing Mobileapp</h1>
+        <p class="hero__subtitle">Maecenas vitae tellus sapien.</p>
+
+        <ul class="hero__item">
+          <li class="hero__items list">
+            <a href="#" class="items__link">
+              <svg class="items__icon" width="18" height="18">
+                <use href="/src/images/sprite-icons.svg#icon-hero-ul"></use>
+              </svg>
+              Prasent semper scelerisque tristique a enim
+            </a>
+          </li>
+          <li class="hero__items list">
+            <a href="#" class="items__link">
+              <svg class="items__icon" width="18" height="18">
+                <use href="/src/images/sprite-icons.svg#icon-hero-ul"></use>
+              </svg>
+              Integer ut mattis nulla, eget vehicula elit
+            </a>
+          </li>
+          <li class="hero__items list">
+            <a href="#" class="items__link">
+              <svg class="items__icon" width="18" height="18">
+                <use href="/src/images/sprite-icons.svg#icon-hero-ul"></use>
+              </svg>
+              Prasent rutrum ac nunc et
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="hero__button">Download</button>
+      </div>
     </div>
   </div>
 </section>
